@@ -1,0 +1,14 @@
+:root {
+--first-color: #61d4b3; 	
+--second-color: #fdd365; 
+--third-color: #fb8d62; 
+--fourth-color: #fd2eb3; 
+}
+
+body {
+    background-color: #fdd365;
+}
+
+h1 {
+    color: #61d4b3;
+}
