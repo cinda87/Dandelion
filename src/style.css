@@ -1,14 +1,44 @@
 :root {
---first-color: #61d4b3; 	
---second-color: #fdd365; 
---third-color: #fb8d62; 
---fourth-color: #fd2eb3; 
+  --first-color: #61d4b3;
+  --second-color: #fdd365;
+  --third-color: #fb8d62;
+  --fourth-color: #fd2eb3;
+  --gradient: linear-gradient(
+    90deg,
+    rgb(162, 243, 232) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(246, 246, 163) 100.2%
+  );
 }
 
 body {
-    background-color: #fdd365;
+  background: var(--gradient);
 }
 
 h1 {
-    color: #61d4b3;
+  color: var(--first-color);
+}
+
+.icon {
+  width: 80px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  border: 2px solid var(--fourth-color);
+}
+
+.img-1 {
+  border: 5px solid var(--second-color);
+}
+
+.img-2 {
+  border: 5px solid var(--third-color);
+}
+
+.img-3 {
+  border: 5px solid var(--fourth-color);
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
 }
